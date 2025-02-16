@@ -52,11 +52,11 @@ C:\freeglut
 │ ├── freeglut.h
 
 ***-------------------- OR -----------------------------------***
-### **2. **Extract freeglut.zip** anywhere.**
+### **2. Extract freeglut.zip anywhere.**
    **Copy these files**:
-     - freeglut.dll → C:\Windows\System32
-     - freeglut.lib → C:\mingw-w64\lib
-     - GL folder → C:\mingw-w64\include\GL
+     - **freeglut.dll → C:\Windows\System32**
+     - **freeglut.lib → C:\mingw-w64\lib**
+     - **GL folder → C:\mingw-w64\include\GL**
 
 ---
 
