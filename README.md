@@ -3,6 +3,7 @@
 This guide helps you set up **MinGW-w64 and FreeGLUT** for OpenGL development on Windows.
 
 ✅ **Checks if MinGW is installed before proceeding**  
+✅ **Ensures the script runs as Administrator**  
 ✅ **Automatically copies FreeGLUT files to the correct folders**  
 ✅ **Provides a test program to verify installation**  
 
@@ -23,10 +24,11 @@ Before running the installation script, **download these files**:
 ---
 
 ## 🔧 Step 2: Install MinGW-w64
-1. **Extract the `mingw-w64.zip`** file.
-2. **Move the extracted folder** to `C:\mingw-w64`.
+1. **Extract the `mingw-w64.zip`** file.  
+2. **Move the extracted folder** to `C:\mingw-w64`.  
 3. **Add MinGW to System PATH**:
-   - Press `Win + R`, type `sysdm.cpl`, go to **Advanced → Environment Variables**.
+   - Press `Win + R`, type `sysdm.cpl`, and press **Enter**.
+   - Go to **Advanced** → **Environment Variables**.
    - Under **System Variables**, find `Path` and click **Edit**.
    - Click **New**, then add:  
      ```
@@ -37,23 +39,31 @@ Before running the installation script, **download these files**:
 ---
 
 ## 🚀 Step 3: Install FreeGLUT Automatically
-### **Run the Script (Recommended)**
-1. **Run `install.bat` as Administrator**:
-   - **Right-click `install.bat` → Run as Administrator**  
-   - It will:
+
+### **1️⃣ Extract FreeGLUT Files to `C:\freeglut`**
+Before running the script, **you must manually extract FreeGLUT** into `C:\freeglut`.  
+Your folder structure should look like this:
+
+C:\freeglut
+├── bin
+│ ├── freeglut.dll ├── lib
+│ ├── freeglut.lib ├── include
+│ ├── GL
+│ ├── freeglut.h
+
+
+### **2️⃣ Run the Script as Administrator**
+1. **Right-click `install.bat` → Select "Run as Administrator"**.  
+   - The script will:
      - **Check if MinGW is installed**.
-     - **Copy FreeGLUT files** to `C:\mingw-w64\`.
-**OR**
-2. **Extract `freeglut.zip`** anywhere.
-   **Copy these files**:
-     - `freeglut.dll` → `C:\Windows\System32`
-     - `freeglut.lib` → `C:\mingw-w64\lib`
-     - `GL` folder → `C:\mingw-w64\include\GL`
+     - **Check if FreeGLUT is extracted correctly**.
+     - **Copy FreeGLUT files to `C:\mingw-w64\`.**  
 
 ---
 
 ## ✅ Step 4: Verify Installation
+
 ### **1️⃣ Check if MinGW is Installed**
-Run this in **Command Prompt (cmd)**:
+Run the following command in **Command Prompt (cmd)**:
 ```sh
 g++ --version
