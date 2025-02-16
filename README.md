@@ -67,3 +67,24 @@ C:\freeglut
 Run the following command in **Command Prompt (cmd)**:
 ```sh
 g++ --version
+
+## Compile and Run the Test Program
+### ***1️⃣ Save the Above Code***
+      Create a file named test.cpp in your working directory.
+### ***2️⃣ Open Command Prompt (cmd) and Navigate to the File Location***
+         Example:         
+         ```sh
+         cd C:\Users\YourUsername\Desktop
+         (Replace YourUsername with your actual user folder name)
+###***3️⃣ Compile the Program***
+      Run the following command:      
+      ```sh
+      g++ -o test test.cpp -lfreeglut -lopengl32 -lglu32
+      If there are no errors, the compilation is successful.
+###***4️⃣ Run the Program***
+      ```sh
+      test.exe
+###***5️⃣ Expected Output***
+   A window should open with a red square in the center.
+   If the square appears, OpenGL is successfully installed! 🚀
+
