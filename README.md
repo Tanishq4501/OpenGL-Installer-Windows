@@ -18,8 +18,8 @@ Before running the installation script, **download these files**:
 ➡ Select the **x86_64-posix-seh** version (latest GCC).  
 
 ### 🔹 **2. Download FreeGLUT**
-📌 [Download FreeGLUT for MinGW](https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MSVC.zip)  
-➡ Select **MinGW Development Libraries** version.  
+📌 [Download FreeGLUT for MinGW](https://www.transmissionzero.co.uk/files/software/development/GLUT/)  
+➡ Select **freeglut-MSVC-3.0.0-2.mp.zip or any MSVC release** version.  
 
 ---
 
