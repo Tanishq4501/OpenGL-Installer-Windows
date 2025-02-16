@@ -40,7 +40,7 @@ Before running the installation script, **download these files**:
 
 ## 🚀 Step 3: Install FreeGLUT Automatically
 
-### **1️⃣ Extract FreeGLUT Files to `C:\freeglut`**
+### **1. Extract FreeGLUT Files to `C:\freeglut`**
 Before running the script, **you must manually extract FreeGLUT** into `C:\freeglut`.  
 Your folder structure should look like this:
 
@@ -50,6 +50,15 @@ C:\freeglut
 │ ├── freeglut.lib ├── include
 │ ├── GL
 │ ├── freeglut.h
+
+***-------------------- OR -----------------------------------***
+### **2. **Extract freeglut.zip** anywhere.**
+   **Copy these files**:
+     - freeglut.dll → C:\Windows\System32
+     - freeglut.lib → C:\mingw-w64\lib
+     - GL folder → C:\mingw-w64\include\GL
+
+---
 
 
 ### **2️⃣ Run the Script as Administrator**
